@@ -12,15 +12,21 @@ body {
 
 .menu {
   position: fixed;
-  overflow-x: hidden;
-  width: 320px;
-  height: 1024px;
-  margin-top: 0px;
-  margin-left: 0px;
+  box-shadow: 16px 0px 52px #0E185033;
   z-index: 1;
+  width: 320px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
 }
 
-.menu, .menu__rectangle {
+.main {
+  margin-left: 320px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.menu, .menu__rectangle, .menu__button, .menu__main {
   display: block;
   text-decoration: none;
 }
@@ -29,19 +35,19 @@ body {
   display: flex;
   flex-direction: column;
   width: 320px;
-  height: 1024px;
-  margin-top: 0px;
-  margin-left: 0px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
   opacity: 1;
   background: #FFFFFF;
-  box-shadow: 16px 0px 52px 0px #0E185033;
-  box-shadow: -2px 0px 4px 0px #454F7E05;
   padding-right: 24px;
   padding-top: 19px;
 }
 
 .menu__button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 320px;
   height: 51px;
   margin-left: 24px;
@@ -64,6 +70,7 @@ body {
   height: 40px;
   margin-left: 0px;
   margin-top: 8px;
+  background: none;
   border: none;
 }
 
@@ -75,6 +82,7 @@ body {
   height: 50.81px;
   margin-top: 0px;
   margin-left: 16.73px;
+  background: none;
   border: none;
 }
 
@@ -87,6 +95,7 @@ body {
   margin-left: 78.73px;
   margin-right: 24px;
   margin-top: 8px;
+  background: none;
   border: none;
 }
 
@@ -94,7 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 222px;
-  height: 876px;
+  height: auto;
   margin-top: 46.46px;
   margin-left: 0px;
   opacity: 1;
@@ -194,3 +203,34 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
 }
+
+/* @media screen and (max-height: 900px) and (max-width: 319px) {
+  .menu {
+      position: fixed;
+  overflow: scroll;
+  width: 320px;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.menu, .menu__rectangle {
+  display: block;
+  text-decoration: none;
+}
+  .menu__rectangle {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 1024px;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 1;
+  background: #FFFFFF;
+  box-shadow: 16px 0px 52px 0px #0E185033;
+  box-shadow: -2px 0px 4px 0px #454F7E05;
+  padding-right: 24px;
+  padding-top: 19px;
+  z-index: 1;
+}
+} */
