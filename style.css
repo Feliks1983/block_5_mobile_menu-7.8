@@ -87,7 +87,7 @@ body {
 .menu__list {
 	display: block;
 	width: 222px;
-	margin-top: 26.46px;
+	margin-top: 18.73px;
 	opacity: 1;
 	height: 100vh;
 }
@@ -97,6 +97,7 @@ body {
 	flex-direction: column;
 	width: 222px;
 	height: auto;
+	margin-top: 46.46px;
 	gap: 22px;
 	font-weight: 500;
 	font-size: 16px;
